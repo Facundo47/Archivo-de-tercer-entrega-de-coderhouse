@@ -1,0 +1,99 @@
+/* Colores base */
+:root {
+    --marron-claro: #825B32;
+    --marron-oscuro: #654520;
+    --celeste-claro: #81DAE3;
+    --celeste-oscuro: #6CBEC7;
+}
+
+/* Estructura general */
+body {
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+    background-color: var(--marron-oscuro);
+    padding: 20px;
+    text-align: center;
+}
+
+header img.logo {
+    width: 100px;
+    height: auto;
+}
+
+/* Sección de Menú */
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+.menu-items div {
+    flex: 1 1 300px;
+    margin: 15px;
+    text-align: center;
+}
+
+.menu-items img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.menu-items img:hover {
+    transform: scale(1.1);
+}
+
+.menu-items p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: var(--marron-oscuro);
+}
+
+/* Footer */
+footer {
+    background-color: var(--marron-claro);
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Formulario de contacto */
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--marron-claro);
+    border-radius: 5px;
+}
+
+/* Redes Sociales */
+.social-links img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    header img.logo {
+        width: 70px;
+    }
+
+    .menu-items div {
+        flex: 1 1 100%;
+    }
+}
