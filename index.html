@@ -5,36 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafetería El Buen Café</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Enlace actualizado para el CSS compilado desde Sass -->
 </head>
 <body>
     <!-- Encabezado -->
-    <header class="d-flex justify-content-between align-items-center p-3 bg-primary text-white">
-        <a href=""><img class="logo" src="page/coffee-shop-logo-template-design-5a0e3cea955fde66f5e8e4e07c8759a1_screen.jpg" alt="Logo de la Cafetería" width="90"></a>
-        <div>
-            <h1 class="text-white">El Buen Café</h1>
-        </div>
-        <nav>
-            <ul class="lista-nav d-flex">
-                <li><a href="inicio.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="menu.html">Menú</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+    <header class="d-flex justify-content-between align-items-center p-3" style="background-color: var(--marron-oscuro);">
+        <a href="index.html"><img class="logo" src="page/coffee-shop-logo-template-design-5a0e3cea955fde66f5e8e4e07c8759a1_screen.jpg" alt="Logo de la Cafetería" width="100"></a>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="inicio.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-
+    
     <!-- Sección Principal -->
     <main class="container my-5">
-        <!-- Imagen Destacada con banner -->
-        <section class="banner text-center p-5 bg-dark text-white">
+        <!-- Imagen Destacada con banner y clase de animación -->
+        <section class="banner text-center p-5 bg-dark text-white animate">
             <h2>Bienvenido a El Buen Café</h2>
-            <p>Un lugar acogedor para disfrutar del mejor café y compañía.</p>
+            <p class="img1">Un lugar acogedor para disfrutar del mejor café y compañía.</p>
         </section>
 
         <!-- Imagen de la cafetería -->
         <div class="text-center my-4">
-            <img src="page/cafeteria.jpg" alt="Imagen de la cafetería" class="img-fluid shadow-lg">
+            <img src="page/cafeteria.jpg" alt="Interior de la cafetería" class="img-fluid shadow-lg">
         </div>
 
         <!-- Descripción de la Cafetería -->
@@ -42,11 +54,36 @@
             <h2>Sobre Nosotros</h2>
             <p>En El Buen Café nos especializamos en ofrecer una experiencia única con cada taza de café. Utilizamos granos seleccionados de las mejores fincas del mundo y contamos con un equipo apasionado por el arte del café.</p>
         </section>
+
+        <!-- Formulario de Contacto -->
+        <section class="contact text-center my-5">
+            <h2>Contáctanos</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombres y Apellidos</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="asunto" class="form-label">Asunto</label>
+                    <input type="text" class="form-control" id="asunto" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </form>
+        </section>
     </main>
 
     <!-- Pie de Página -->
     <footer class="bg-dark text-white text-center p-3">
         <p>Encuéntranos en Calle av Presidente Castillo frente la plaza de la chacarita. Tel: (383) 435-3637</p>
+        <p>Síguenos en nuestras redes sociales: [Íconos de redes sociales aquí]</p> <!-- Añadir iconos de redes sociales -->
         <p>&copy; 2024 El Buen Café. Todos los derechos reservados.</p>
     </footer>
 

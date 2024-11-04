@@ -5,16 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="El Buen Café, una cafetería con 6 años de experiencia que ofrece una experiencia única en cada taza de café.">
+    <meta name="keywords" content="Café, cafetería, El Buen Café, bebidas calientes, pastelería">
     <title>Sobre Nosotros - El Buen Café</title>
 </head>
 <body>
     <!-- Encabezado -->
-    <header class="text-center py-4">
-        <a href="#">
-            <img class="logo img-fluid" src="page/coffee-shop-logo-template-design-5a0e3cea955fde66f5e8e4e07c8759a1_screen.jpg" alt="Logo El Buen Café" width="120">
+    <header class="d-flex justify-content-between align-items-center p-3" style="background-color: var(--marron-oscuro);">
+        <a href="index.html">
+            <img class="logo" src="page/coffee-shop-logo-template-design-5a0e3cea955fde66f5e8e4e07c8759a1_screen.jpg" alt="Logo El Buen Café" width="100">
         </a>
-        <h1 class="my-3">El Buen Café</h1>
+        <h1 class="text-white">El Buen Café</h1>
     </header>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: var(--marron-oscuro);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="inicio.html">El Buen Café</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="inicio.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Sección de Introducción -->
     <main class="container">
@@ -45,10 +65,21 @@
         <!-- Mapa de Ubicación -->
         <section class="text-center my-4">
             <h3>Encuéntranos</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14030.598036130863!2d-65.7524507!3d-28.4599801!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94242fd238070115%3A0xb5ed9ce5db2b2048!2sPlaza%20la%20Chacarita%20Fray%20Bernardino%20Orellana!5e0!3m2!1ses!2sar!4v1726581616622!5m2!1ses!2sar" 
-                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14030.598036130863!2d-65.7524507!3d-28.4599801!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94242fd238070115%3A0xb5ed9ce5db2b2048!2sPlaza%20la%20Chacarita%20Fray%20Bernardino%20Orellana!5e0!3m2!1ses!2sar!4v1726581616622!5m2!1ses!2sar"></iframe>
+        </section>
+
+
+        <!-- Botón de Llamado a la Acción -->
+        <section class="text-center my-4">
+            <a href="menu.html" class="btn btn-primary">¡Descubre nuestro menú!</a>
         </section>
     </main>
+
+    <!-- Pie de Página -->
+    <footer class="bg-dark text-white text-center p-3">
+        <p>Encuéntranos en Calle av Presidente Castillo frente a la plaza de la chacarita. Tel: (383) 435-3637</p>
+        <p>&copy; 2024 El Buen Café. Todos los derechos reservados.</p>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

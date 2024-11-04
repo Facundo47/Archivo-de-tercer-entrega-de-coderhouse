@@ -1,9 +1,7 @@
 /* Colores base */
-:root {
+:root { 
     --marron-claro: #825B32;
     --marron-oscuro: #654520;
-    --celeste-claro: #81DAE3;
-    --celeste-oscuro: #6CBEC7;
 }
 
 /* Estructura general */
@@ -20,11 +18,39 @@ header {
     background-color: var(--marron-oscuro);
     padding: 20px;
     text-align: center;
+    color: #fff;
 }
 
 header img.logo {
     width: 100px;
     height: auto;
+}
+
+header h1 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* Centrar todos los títulos */
+h1 {
+    text-align: center;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: var(--marron-oscuro);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--marron-claro);
+}
+
+.navbar .navbar-nav .nav-link.active {
+    text-decoration: underline; /* Subrayar el enlace activo */
 }
 
 /* Sección de Menú */
@@ -63,16 +89,21 @@ footer {
     background-color: var(--marron-claro);
     color: #fff;
     text-align: center;
-    padding: 15px 0;
+    padding: 25px 0; /* Aumenta el padding superior e inferior */
 }
 
 /* Formulario de contacto */
-.contact-form label {
+.form-contacto {
+    margin-top: 20px;
+}
+
+.form-contacto label {
     display: block;
     margin: 10px 0 5px;
 }
 
-.contact-form input, .contact-form textarea {
+.form-contacto input, 
+.form-contacto textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -81,19 +112,37 @@ footer {
 }
 
 /* Redes Sociales */
+.social-media {
+    margin: 20px 0;
+}
+
+.social-media a:hover img {
+    transform: scale(1.1); /* Aumentar el tamaño al pasar el mouse */
+    transition: transform 0.3s ease; /* Suavizar la transición */
+}
+
 .social-links img {
-    width: 50px;
-    height: 50px;
-    margin: 10px;
+    width: 40px; 
+    height: 40px;
+    margin: 0 10px;
 }
 
 /* Media queries */
 @media (max-width: 768px) {
     header img.logo {
-        width: 70px;
+        width: 70px; 
     }
 
     .menu-items div {
         flex: 1 1 100%;
+    }
+
+    .social-links img {
+        width: 30px; 
+        height: 30px;
+    }
+
+    body {
+        font-size: 14px; /* Tamaño de fuente reducido para pantallas pequeñas */
     }
 }

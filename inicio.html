@@ -8,29 +8,67 @@
     <title>Inicio - El Buen Café</title>
 </head>
 <body>
-    <div class="container text-center my-4">
-        <h1 class="mb-4">Bienvenido a El Buen Café</h1>
-        <p>Inicio de la cafetería El Buen Café</p>
+    <!-- Encabezado -->
+    <header class="d-flex justify-content-between align-items-center p-3" style="background-color: var(--marron-oscuro);">
+        <a href="index.html">
+            <img class="logo" src="page/coffee-shop-logo-template-design-5a0e3cea955fde66f5e8e4e07c8759a1_screen.jpg" alt="Logo El Buen Café" width="100">
+        </a>
+        <h1 class="text-white">Bienvenido a El Buen Café</h1>
+    </header>
 
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: var(--marron-oscuro);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">El Buen Café</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="inicio.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center my-4">
         <!-- Galería de Imágenes -->
+        <h2 class="mb-4">Galería de Imágenes</h2>
         <div class="row">
-            <div class="col-md-4 mb-4">
-                <a href=""><img src="page/cafeteria.jpg" class="img-fluid img-thumbnail hover-zoom" alt="Imagen de la cafetería"></a>
+            <div class="col-md-4 col-6 mb-4">
+                <a href="#"><img src="page/cafeteria.jpg" class="img-fluid img-thumbnail hover-zoom" alt="Interior de la cafetería"></a>
             </div>
-            <div class="col-md-4 mb-4">
-                <a href=""><img src="page/descarga.jpg" class="img-fluid img-thumbnail hover-zoom" alt="Imagen"></a>
+            <div class="col-md-4 col-6 mb-4">
+                <a href="#"><img src="page/descarga.jpg" class="img-fluid img-thumbnail hover-zoom" alt="Café en la mesa"></a>
             </div>
-            <div class="col-md-4 mb-4">
-                <a href=""><img src="page/blog-1.jpg" class="img-fluid img-thumbnail hover-zoom" alt="Blog 1"></a>
+            <div class="col-md-4 col-6 mb-4">
+                <a href="#"><img src="page/blog-1.jpg" class="img-fluid img-thumbnail hover-zoom" alt="Taza de café"></a>
             </div>
-            <div class="col-md-4 mb-4">
-                <a href=""><img src="page/blog-2.jpg" class="img-fluid img-thumbnail hover-zoom" alt="Blog 2"></a>
+            <div class="col-md-4 col-6 mb-4">
+                <a href="#"><img src="page/blog-2.jpg" class="img-fluid img-thumbnail hover-zoom" alt="Galletas junto al café"></a>
             </div>
-            <div class="col-md-4 mb-4">
-                <a href=""><img src="page/blog-3.jpg" class="img-fluid img-thumbnail hover-zoom" alt="Blog 3"></a>
+            <div class="col-md-4 col-6 mb-4">
+                <a href="#"><img src="page/blog-3.jpg" class="img-fluid img-thumbnail hover-zoom" alt="Clientes disfrutando del café"></a>
             </div>
         </div>
     </div>
+
+    <!-- Pie de Página -->
+    <footer class="bg-dark text-white text-center p-3 mt-4">
+        <p>Encuéntranos en Calle av Presidente Castillo frente la plaza de la chacarita. Tel: (383) 435-3637</p>
+        <p>&copy; 2024 El Buen Café. Todos los derechos reservados.</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
